@@ -8,9 +8,17 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import dash_auth
+
+# username and password pairs for dash_auth
+# more secure options for paid plans only
+USERNAME_PASSWORD_PAIRS = [['GetSmart', 'Max'], ['JamesBond', '007']]
 
 # Launch the application:
 app = dash.Dash()
+auth = dash_auth.BasicAuth(app,USERNAME_PASSWORD_PAIRS)
+
+
 
 # Create a Dash layout that contains input components
 # and at least one output. Assign IDs to each component:
