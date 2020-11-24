@@ -1,5 +1,5 @@
 # stock data from account at https://api.tiingo.com/account/profile api=646d358e70fa9664e2795e73e1ce4ce4c13b5266
-# stopped tut at one stock, trying to add multiple stocks "traces" did not work.
+
 
 import dash
 import dash_core_components as dcc
